@@ -42,58 +42,79 @@ Below is the complete list of available skills. Each skill folder contains a `SK
 
 > [!NOTE] > **Document Skills**: We provide both **community** and **official Anthropic** versions for DOCX, PDF, PPTX, and XLSX. Locally, the official versions are used by default (via symlinks). In the repository, both versions are available for flexibility.
 
-| Skill Name                       | Description                                                    | Path                                           |
-| :------------------------------- | :------------------------------------------------------------- | :--------------------------------------------- |
-| **Address GitHub Comments**      | Systematic PR feedback handling using gh CLI.                  | `skills/address-github-comments` ⭐ NEW        |
-| **Algorithmic Art**              | Creative generative art using p5.js and seeded randomness.     | `skills/algorithmic-art`                       |
-| **App Store Optimization**       | Complete ASO toolkit for iOS and Android app performance.      | `skills/app-store-optimization`                |
-| **Autonomous Agent Patterns**    | Design patterns for autonomous coding agents and tools.        | `skills/autonomous-agent-patterns` ⭐ NEW      |
-| **AWS Pentesting**               | Specialized security assessment for Amazon Web Services.       | `skills/aws-penetration-testing`               |
-| **Backend Guidelines**           | Core architecture patterns for Node/Express microservices.     | `skills/backend-dev-guidelines`                |
-| **Concise Planning**             | Atomic, actionable task planning and checklists.               | `skills/concise-planning` ⭐ NEW               |
-| **Brainstorming**                | Requirement discovery and intent exploration framework.        | `skills/brainstorming`                         |
-| **Brand Guidelines (Anthropic)** | Official Anthropic brand styling and visual standards.         | `skills/brand-guidelines-anthropic` ⭐ NEW     |
-| **Brand Guidelines (Community)** | Community-contributed brand guidelines and templates.          | `skills/brand-guidelines-community`            |
-| **Bun Development**              | Modern JavaScript/TypeScript development with Bun runtime.     | `skills/bun-development` ⭐ NEW                |
-| **Canvas Design**                | Beautiful static visual design in PDF and PNG.                 | `skills/canvas-design`                         |
-| **Claude D3.js**                 | Advanced data visualization with D3.js.                        | `skills/claude-d3js-skill`                     |
-| **Content Creator**              | SEO-optimized marketing and brand voice toolkit.               | `skills/content-creator`                       |
-| **Core Components**              | Design system tokens and baseline UI patterns.                 | `skills/core-components`                       |
-| **Doc Co-authoring**             | Structured workflow for technical documentation.               | `skills/doc-coauthoring`                       |
-| **DOCX (Official)**              | Official Anthropic MS Word document manipulation.              | `skills/docx-official` ⭐ NEW                  |
-| **Ethical Hacking**              | Comprehensive penetration testing lifecycle methodology.       | `skills/ethical-hacking-methodology`           |
-| **Frontend Design**              | Production-grade UI component implementation.                  | `skills/frontend-design`                       |
-| **Frontend Guidelines**          | Modern React/TS development patterns and file structure.       | `skills/frontend-dev-guidelines`               |
-| **Git Pushing**                  | Automated staging and conventional commits.                    | `skills/git-pushing`                           |
-| **GitHub Workflow Automation**   | AI-powered PR reviews, issue triage, and CI/CD integration.    | `skills/github-workflow-automation` ⭐ NEW     |
-| **Internal Comms (Anthropic)**   | Official Anthropic corporate communication templates.          | `skills/internal-comms-anthropic` ⭐ NEW       |
-| **Internal Comms (Community)**   | Community-contributed communication templates.                 | `skills/internal-comms-community`              |
-| **JavaScript Mastery**           | 33+ essential JavaScript concepts every developer should know. | `skills/javascript-mastery` ⭐ NEW             |
-| **Kaizen**                       | Continuous improvement and error-proofing (Poka-Yoke).         | `skills/kaizen`                                |
-| **Linux Shell Scripting**        | Production-ready shell scripts for automation.                 | `skills/linux-shell-scripting`                 |
-| **LLM App Patterns**             | RAG pipelines, agent architectures, and LLMOps patterns.       | `skills/llm-app-patterns` ⭐ NEW               |
-| **Loki Mode**                    | Fully autonomous startup development engine.                   | `skills/loki-mode`                             |
-| **MCP Builder**                  | High-quality Model Context Protocol (MCP) server creation.     | `skills/mcp-builder`                           |
-| **NotebookLM**                   | Source-grounded querying via Google NotebookLM.                | `skills/notebooklm`                            |
-| **PDF (Official)**               | Official Anthropic PDF document manipulation.                  | `skills/pdf-official` ⭐ NEW                   |
-| **Pentest Checklist**            | Structured security assessment planning and scoping.           | `skills/pentest-checklist`                     |
-| **PPTX (Official)**              | Official Anthropic PowerPoint manipulation.                    | `skills/pptx-official` ⭐ NEW                  |
-| **Product Toolkit**              | RICE prioritization and product discovery frameworks.          | `skills/product-manager-toolkit`               |
-| **Prompt Engineering**           | Expert patterns for LLM instruction optimization.              | `skills/prompt-engineering`                    |
-| **Prompt Library**               | Curated role-based and task-specific prompt templates.         | `skills/prompt-library` ⭐ NEW                 |
-| **React Best Practices**         | Vercel's 40+ performance optimization rules for React.         | `skills/react-best-practices` ⭐ NEW (Vercel)  |
-| **React UI Patterns**            | Standardized loading states and error handling for React.      | `skills/react-ui-patterns`                     |
-| **Senior Architect**             | Scalable system design and architecture diagrams.              | `skills/senior-architect`                      |
-| **Skill Creator**                | Meta-skill for building high-performance agentic skills.       | `skills/skill-creator`                         |
-| **Software Architecture**        | Quality-focused design principles and analysis.                | `skills/software-architecture`                 |
-| **Systematic Debugging**         | Root cause analysis and structured fix verification.           | `skills/systematic-debugging`                  |
-| **TDD**                          | Test-Driven Development workflow and red-green-refactor.       | `skills/test-driven-development`               |
-| **UI/UX Pro Max**                | Advanced design intelligence and 50+ styling options.          | `skills/ui-ux-pro-max`                         |
-| **Web Artifacts**                | Complex React/Tailwind/Shadcn UI artifact builder.             | `skills/web-artifacts-builder`                 |
-| **Web Design Guidelines**        | Vercel's 100+ UI/UX audit rules (accessibility, performance).  | `skills/web-design-guidelines` ⭐ NEW (Vercel) |
-| **Webapp Testing**               | Local web application testing with Playwright.                 | `skills/webapp-testing`                        |
-| **Workflow Automation**          | Multi-step automations, API integration, AI-native pipelines.  | `skills/workflow-automation` ⭐ NEW            |
-| **XLSX (Official)**              | Official Anthropic Excel spreadsheet manipulation.             | `skills/xlsx-official` ⭐ NEW                  |
+| Skill Name                         | Description                                                     | Path                                           |
+| :--------------------------------- | :-------------------------------------------------------------- | :--------------------------------------------- |
+| **Address GitHub Comments**        | Systematic PR feedback handling using gh CLI.                   | `skills/address-github-comments` ⭐ NEW        |
+| **Algorithmic Art**                | Creative generative art using p5.js and seeded randomness.      | `skills/algorithmic-art`                       |
+| **App Store Optimization**         | Complete ASO toolkit for iOS and Android app performance.       | `skills/app-store-optimization`                |
+| **Autonomous Agent Patterns**      | Design patterns for autonomous coding agents and tools.         | `skills/autonomous-agent-patterns` ⭐ NEW      |
+| **AWS Pentesting**                 | Specialized security assessment for Amazon Web Services.        | `skills/aws-penetration-testing`               |
+| **Backend Guidelines**             | Core architecture patterns for Node/Express microservices.      | `skills/backend-dev-guidelines`                |
+| **Concise Planning**               | Atomic, actionable task planning and checklists.                | `skills/concise-planning` ⭐ NEW               |
+| **Brainstorming**                  | Requirement discovery and intent exploration framework.         | `skills/brainstorming`                         |
+| **Brand Guidelines (Anthropic)**   | Official Anthropic brand styling and visual standards.          | `skills/brand-guidelines-anthropic` ⭐ NEW     |
+| **Brand Guidelines (Community)**   | Community-contributed brand guidelines and templates.           | `skills/brand-guidelines-community`            |
+| **Bun Development**                | Modern JavaScript/TypeScript development with Bun runtime.      | `skills/bun-development` ⭐ NEW                |
+| **Canvas Design**                  | Beautiful static visual design in PDF and PNG.                  | `skills/canvas-design`                         |
+| **Claude D3.js**                   | Advanced data visualization with D3.js.                         | `skills/claude-d3js-skill`                     |
+| **Content Creator**                | SEO-optimized marketing and brand voice toolkit.                | `skills/content-creator`                       |
+| **Core Components**                | Design system tokens and baseline UI patterns.                  | `skills/core-components`                       |
+| **Dispatching Parallel Agents**    | Work on independent tasks without shared state.                 | `skills/dispatching-parallel-agents`           |
+| **Doc Co-authoring**               | Structured workflow for technical documentation.                | `skills/doc-coauthoring`                       |
+| **DOCX (Official)**                | Official Anthropic MS Word document manipulation.               | `skills/docx-official` ⭐ NEW                  |
+| **Ethical Hacking**                | Comprehensive penetration testing lifecycle methodology.        | `skills/ethical-hacking-methodology`           |
+| **Executing Plans**                | Execute written implementation plans in structured sessions.    | `skills/executing-plans`                       |
+| **File Organizer**                 | Context-aware file organization and duplicate cleanup.          | `skills/file-organizer`                        |
+| **Finishing Dev Branch**           | Structured workflow for merging, PRs, and branch cleanup.       | `skills/finishing-a-development-branch`        |
+| **Frontend Design**                | Production-grade UI component implementation.                   | `skills/frontend-design`                       |
+| **Frontend Guidelines**            | Modern React/TS development patterns and file structure.        | `skills/frontend-dev-guidelines`               |
+| **Git Pushing**                    | Automated staging and conventional commits.                     | `skills/git-pushing`                           |
+| **GitHub Workflow Automation**     | AI-powered PR reviews, issue triage, and CI/CD integration.     | `skills/github-workflow-automation` ⭐ NEW     |
+| **Internal Comms (Anthropic)**     | Official Anthropic corporate communication templates.           | `skills/internal-comms-anthropic` ⭐ NEW       |
+| **Internal Comms (Community)**     | Community-contributed communication templates.                  | `skills/internal-comms-community`              |
+| **JavaScript Mastery**             | 33+ essential JavaScript concepts every developer should know.  | `skills/javascript-mastery` ⭐ NEW             |
+| **Kaizen**                         | Continuous improvement and error-proofing (Poka-Yoke).          | `skills/kaizen`                                |
+| **Linux Shell Scripting**          | Production-ready shell scripts for automation.                  | `skills/linux-shell-scripting`                 |
+| **LLM App Patterns**               | RAG pipelines, agent architectures, and LLMOps patterns.        | `skills/llm-app-patterns` ⭐ NEW               |
+| **Loki Mode**                      | Fully autonomous startup development engine.                    | `skills/loki-mode`                             |
+| **MCP Builder**                    | High-quality Model Context Protocol (MCP) server creation.      | `skills/mcp-builder`                           |
+| **NotebookLM**                     | Source-grounded querying via Google NotebookLM.                 | `skills/notebooklm`                            |
+| **PDF (Official)**                 | Official Anthropic PDF document manipulation.                   | `skills/pdf-official` ⭐ NEW                   |
+| **Pentest Checklist**              | Structured security assessment planning and scoping.            | `skills/pentest-checklist`                     |
+| **Planning With Files**            | Manus-style file-based planning for complex tasks.              | `skills/planning-with-files`                   |
+| **Playwright Automation**          | Complete browser automation and testing with Playwright.        | `skills/playwright-skill`                      |
+| **PPTX (Official)**                | Official Anthropic PowerPoint manipulation.                     | `skills/pptx-official` ⭐ NEW                  |
+| **Product Toolkit**                | RICE prioritization and product discovery frameworks.           | `skills/product-manager-toolkit`               |
+| **Prompt Engineering**             | Expert patterns for LLM instruction optimization.               | `skills/prompt-engineering`                    |
+| **Prompt Library**                 | Curated role-based and task-specific prompt templates.          | `skills/prompt-library` ⭐ NEW                 |
+| **React Best Practices**           | Vercel's 40+ performance optimization rules for React.          | `skills/react-best-practices` ⭐ NEW (Vercel)  |
+| **React UI Patterns**              | Standardized loading states and error handling for React.       | `skills/react-ui-patterns`                     |
+| **Receiving Code Review**          | Technical verification of code review feedback.                 | `skills/receiving-code-review`                 |
+| **Requesting Code Review**         | Pre-merge requirements verification workflow.                   | `skills/requesting-code-review`                |
+| **Senior Architect**               | Scalable system design and architecture diagrams.               | `skills/senior-architect`                      |
+| **Senior Fullstack**               | Comprehensive fullstack guide (React, Node, Postgres).          | `skills/senior-fullstack`                      |
+| **Skill Creator**                  | Meta-skill for building high-performance agentic skills.        | `skills/skill-creator`                         |
+| **Skill Developer**                | Create and manage skills using Anthropic best practices.        | `skills/skill-developer`                       |
+| **Slack GIF Creator**              | Create animated GIFs optimized for Slack.                       | `skills/slack-gif-creator`                     |
+| **Software Architecture**          | Quality-focused design principles and analysis.                 | `skills/software-architecture`                 |
+| **Subagent Driven Dev**            | Orchestrate independent subtasks in current session.            | `skills/subagent-driven-development`           |
+| **Systematic Debugging**           | Root cause analysis and structured fix verification.            | `skills/systematic-debugging`                  |
+| **TDD**                            | Test-Driven Development workflow and red-green-refactor.        | `skills/test-driven-development`               |
+| **Test Fixing**                    | Systematically fix failing tests using smart error grouping.    | `skills/test-fixing`                           |
+| **Testing Patterns**               | Jest patterns, factories, and TDD workflow strategies.          | `skills/testing-patterns`                      |
+| **Theme Factory**                  | Toolkit for styling artifacts with pre-set or generated themes. | `skills/theme-factory`                         |
+| **Top 100 Vulnerabilities**        | OWASP-aligned web vulnerability taxonomy and mitigations.       | `skills/top-web-vulnerabilities`               |
+| **UI/UX Pro Max**                  | Advanced design intelligence and 50+ styling options.           | `skills/ui-ux-pro-max`                         |
+| **Using Git Worktrees**            | Isolated workspaces for safe feature development.               | `skills/using-git-worktrees`                   |
+| **Using Superpowers**              | Establish skill usage protocols at conversation start.          | `skills/using-superpowers`                     |
+| **Verification Before Completion** | Run verification commands before claiming success.              | `skills/verification-before-completion`        |
+| **Web Artifacts**                  | Complex React/Tailwind/Shadcn UI artifact builder.              | `skills/web-artifacts-builder`                 |
+| **Web Design Guidelines**          | Vercel's 100+ UI/UX audit rules (accessibility, performance).   | `skills/web-design-guidelines` ⭐ NEW (Vercel) |
+| **Webapp Testing**                 | Local web application testing with Playwright.                  | `skills/webapp-testing`                        |
+| **Workflow Automation**            | Multi-step automations, API integration, AI-native pipelines.   | `skills/workflow-automation` ⭐ NEW            |
+| **Writing Plans**                  | Create specs for multi-step tasks before coding.                | `skills/writing-plans`                         |
+| **Writing Skills**                 | Create and verify skills before deployment.                     | `skills/writing-skills`                        |
+| **XLSX (Official)**                | Official Anthropic Excel spreadsheet manipulation.              | `skills/xlsx-official` ⭐ NEW                  |
 
 > [!TIP]
 > Use the `validate_skills.py` script in the `scripts/` directory to ensure all skills are properly formatted and ready for use.
